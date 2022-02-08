@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-text: #4e5150;
+  --location: #a9a9a9;
+  --secondary-text: #bdbdbd;
+  --stat-bg: #e5e5e5;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem 0.7rem;
+  max-width: 928px;
+  margin: auto;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 600;
+}
+
+.profile img {
+  max-width: 101px;
+  border-radius: 16px;
+}
+
+h1 {
+  color: var(--primary-text);
+  font-size: 0.875rem;
+  font-size: clamp(
+    0.875rem,
+    0.6549295774647887rem + 0.9389671361502347vw,
+    1.5rem
+  );
+}
+
+.location {
+  color: var(--location);
+  font-size: 0.625rem;
+  font-size: clamp(
+    0.625rem,
+    0.5369718309859155rem + 0.3755868544600939vw,
+    0.875rem
+  );
+}
+
+#profile-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 0.4rem;
+}
+
+.stat {
+  min-width: 78px;
+  background: var(--stat-bg);
+  border-radius: 12px;
+  text-align: center;
+  padding: 0.69rem 0.54rem;
+}
+
+.stat-num {
+  color: var(--primary-text);
+  font-size: 0.75rem;
+  font-size: clamp(
+    0.75rem,
+    0.6179577464788732rem + 0.5633802816901408vw,
+    1.125rem
+  );
+}
+
+.stat-title {
+  color: var(--secondary-text);
+  font-size: 0.75rem;
+  font-size: clamp(
+    0.75rem,
+    0.7059859154929577rem + 0.18779342723004694vw,
+    0.875rem
+  );
+}
+
+#gallery {
+  display: grid;
+  grid-template-areas:
+    "p1 p2 p2"
+    "p3 p3 p4"
+    "p5 p6 p4";
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.photo {
+  padding: 0;
+  margin: 0;
+}
+
+.photo img {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+}
+
+.photo:nth-child(1) {
+  grid-area: p1;
+}
+.photo:nth-child(2) {
+  grid-area: p2;
+}
+.photo:nth-child(3) {
+  grid-area: p3;
+}
+
+.photo:nth-child(4) {
+  grid-area: p4;
+}
+
+.photo:nth-child(5) {
+  grid-area: p6;
+}
+
+.photo:nth-child(6) {
+  grid-area: p5;
+}
+#attribution {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 0.875rem;
+  color: var(--secondary-text);
+}
+
+#attribution a {
+  color: var(--primary-text);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#attribution a:hover {
+  color: #96a89b;
+}
