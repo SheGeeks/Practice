@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Modern Interior - devChallenges</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <h1 id="logo">This interior</h1>
+        <div class="mobile" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div id="menu" class="">
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <main>
+        <div id="desc">
+          <h2>Modern interior</h2>
+          <p>
+            A full-Service residential & commercial interior design and staging
+            company offering professional organizing & <br />
+            eco-services.
+          </p>
+          <a href="#">Read more <span> &#8594;</span></a>
+        </div>
+        <div id="featured-img">
+          <img src="photo1.png" alt="" />
+          <div class="img-desc">
+            <div class="desc-head">
+              <img src="photo2.png" alt="user avatar" />
+              <div>
+                <p class="desc-designer">Aliza Webber</p>
+                <p class="desc-role">Interior designer</p>
+              </div>
+            </div>
+            <p class="desc-text">Designed in 2020 by Aliza Webber</p>
+          </div>
+        </div>
+      </main>
+      <div id="attribution">
+        Coded by <a href="https://corvida.netlify.app/">Corvida</a> :
+        devChallenges.io
+      </div>
+    </div>
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+        document.getElementById("menu").classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>
