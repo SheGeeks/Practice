@@ -8,7 +8,7 @@ A space for impromptu practice projects I've completed that capture my imaginati
 
 ## [devChallenges.io](devChallenges.io)
 
-1. Interior Consultant Challenge
-2. My Gallery Challenge
-3. Team Page Challenge
-4. Recipe Page Challenge
+1. [Interior Consultant Challenge](https://shegeeks.github.io/Practice/dev-challenges/interior-consultant/)
+2. [My Gallery Challenge](https://shegeeks.github.io/Practice/dev-challenges/my-gallery/)
+3. [Team Page Challenge](https://shegeeks.github.io/Practice/dev-challenges/team-page/)
+4. [Recipe Page Challenge](https://shegeeks.github.io/Practice/dev-challenges/recipe-page/)
