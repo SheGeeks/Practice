@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+:root {
+  --label: hsl(0, 0%, 31%);
+  --accent-gray: hsl(0, 0%, 51%);
+}
+
+body {
+  background: #fff;
+  font-size: 14px;
+}
+
+.container {
+  padding: 2rem 0.7rem 1.5rem;
+  /* display: flex;
+  flex-direction: column; */
+  max-width: 400px;
+  margin: auto;
+}
+
+main {
+}
+
+h1 {
+  /* width: 100%; */
+  position: absolute;
+  top: 2rem;
+  color: #4e5150;
+  font-size: 1.5rem;
+  font-size: clamp(
+    1.5rem,
+    1.2115384615384615rem + 1.153846153846154vw,
+    2.25rem
+  );
+}
+
+h2 {
+  font-size: 0.875rem;
+  font-size: clamp(
+    0.875rem,
+    0.7788461538461539rem + 0.38461538461538464vw,
+    1.125rem
+  );
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+#checkout-form {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 2.3rem;
+  max-width: 465px;
+  width: 100%;
+  position: relative;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.info-section:nth-child(2) {
+  margin-top: 2rem;
+}
+
+label {
+  font-size: 0.625rem;
+  font-size: clamp(
+    0.625rem,
+    0.5769230769230769rem + 0.19230769230769232vw,
+    0.75rem
+  );
+  color: var(--label);
+  position: relative;
+}
+
+i {
+  position: absolute;
+  left: 10px;
+  top: 29px;
+  font-size: small;
+  color: var(--accent-gray);
+}
+
+.info-input {
+  width: 100%;
+}
+
+input:not(#save) {
+  display: block;
+  border-radius: 12px;
+  width: 100%;
+  padding: 0.7rem 0 0.7rem 2.3rem;
+  border: 1px solid var(--accent-gray);
+  color: #333333;
+}
+
+input::placeholder {
+  font-size: 0.75rem;
+  font-size: clamp(
+    0.75rem,
+    0.6538461538461539rem + 0.38461538461538464vw,
+    1rem
+  );
+}
+
+.info-input:nth-child(5) {
+  width: 46.5%;
+  max-width: 217px;
+}
+
+.info-input:nth-child(6) {
+  width: 46.5%;
+  display: block;
+  max-width: 217px;
+}
+
+#countries {
+  border: 1px solid var(--accent-gray);
+  background-color: #fff;
+  display: block;
+  font-size: 0.625rem;
+  font-size: clamp(
+    0.75rem,
+    0.6538461538461539rem + 0.38461538461538464vw,
+    1rem
+  );
+  padding: 0.8rem 2.3rem;
+  border-radius: 12px;
+  width: 100%;
+  color: #828282;
+}
+
+#save {
+  margin-right: 0.5rem;
+}
+
+.info-section button#checkout {
+  background-color: #f2994a;
+  border-radius: 12px;
+  border: none;
+  padding: 1.1rem 1rem;
+  color: #fff;
+  font-size: 1rem;
+  width: 47.1%;
+  position: absolute;
+  bottom: -60px;
+  right: 0;
+}
+
+#checkout-cart {
+  background-color: #f2f2f2;
+  padding: 1.7rem 1.5rem 0.5rem;
+  border-radius: 12px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 383px;
+  gap: 2rem;
+}
+
+.cart-item {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.cart-item img {
+  border-radius: 13px;
+  width: 42.55%;
+}
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.item-name {
+  font-size: 0.75rem;
+  font-size: clamp(
+    0.75rem,
+    0.6538461538461539rem + 0.38461538461538464vw,
+    1rem
+  );
+  color: #4e5150;
+}
+
+.item-amount {
+  font-size: 0.875rem;
+  font-size: clamp(
+    0.875rem,
+    0.8269230769230769rem + 0.19230769230769232vw,
+    1rem
+  );
+  color: #f2994a;
+}
+
+.item-amount span {
+  color: #4e5150;
+  font-size: 0.625rem;
+  font-size: clamp(
+    0.625rem,
+    0.5769230769230769rem + 0.19230769230769232vw,
+    0.75rem
+  );
+  text-decoration: line-through;
+  margin-left: 0.4rem;
+}
+
+.item-counter {
+  border: 1px solid #828282;
+  border-radius: 12px;
+  padding: 0.5rem;
+  margin-top: auto;
+}
+
+span {
+  cursor: pointer;
+}
+
+.minus,
+.plus {
+  width: 19.39px;
+  height: 19.39px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  color: #828282;
+}
+
+#checkout-cart input.quantity {
+  background: #f2f2f2;
+  height: 30px;
+  width: 58px;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  display: inline-block;
+  padding: 0;
+}
+
+#cart-totals {
+  margin-top: 2rem;
+  color: #333333;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.7rem 0;
+  border-top: 1px solid #bdbdbd;
+  padding: 0.4rem 0;
+  font-size: 0.875rem;
+  font-size: clamp(
+    0.875rem,
+    0.7788461538461539rem + 0.38461538461538464vw,
+    1.125rem
+  );
+}
+
+.item-total {
+  font-size: 0.875rem;
+}
+
+.hint {
+  visibility: visible;
+  font-size: 0.625rem;
+  color: #c8352d;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#attribution {
+  text-align: center;
+  color: #bdbdbd;
+  padding: 5rem 0 0rem;
+}
+
+#attribution a {
+  text-decoration: none;
+  color: var(--label);
+}
+
+#attribution a:hover {
+  color: #c8352d;
+}
+
+@media screen and (min-width: 964px) {
+  .container {
+    padding: 4.6rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: unset;
+  }
+
+  h1 {
+    top: 4rem;
+  }
+
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  #checkout-form {
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 7rem;
+  }
+
+  form {
+    margin-top: 2.35rem;
+  }
+
+  .info-section {
+    gap: 0.3rem;
+  }
+
+  .info-section:nth-child(2) {
+    margin-top: 2.8rem;
+  }
+
+  input:not(#save) {
+    padding: 1.18rem 0 1.18rem 2.7rem;
+    margin-top: 0.4rem;
+  }
+
+  #countries {
+    padding: 1.15rem 2.3rem;
+    margin-top: 0.4rem;
+  }
+
+  i {
+    top: 39px;
+    font-size: large;
+  }
+
+  .info-section button#checkout {
+    width: 35.7%;
+  }
+
+  #checkout-cart {
+    margin-top: 3rem;
+    padding: 2.1rem 1.5rem 1.2rem;
+  }
+
+  .cart-item img {
+    width: 40%;
+  }
+
+  #checkout-cart input.quantity {
+    padding: 0;
+    margin-top: 0;
+    height: 34px;
+    width: 70px;
+  }
+
+  #cart-totals {
+    margin-top: 3.4rem;
+  }
+
+  .total {
+    padding: 0.7rem 0 0;
+    margin: 0.5rem 0;
+  }
+}

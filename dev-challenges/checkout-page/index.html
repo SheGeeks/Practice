@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Checkout page - devChallenges.io</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <main>
+        <h1>Checkout</h1>
+        <div id="checkout-form">
+          <form id="checkoutF" name="checkoutF">
+            <div id="checkout-info">
+              <div class="info-section">
+                <h2>Contact information</h2>
+                <div class="info-input">
+                  <label for="firstName"
+                    >E-mail
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Enter your email..."
+                    />
+                    <i class="fas fa-envelope"></i>
+                  </label>
+                  <p class="hint hidden">
+                    Incorrect email address. Check format.
+                  </p>
+                </div>
+                <div class="info-input">
+                  <label for="tel"
+                    >Phone
+                    <input
+                      type="tel"
+                      id="tel"
+                      name="tel"
+                      maxlength="10"
+                      placeholder="Enter your phone..."
+                    />
+                    <i class="fas fa-phone"></i>
+                  </label>
+                  <p class="hint hidden">
+                    Incorrect phone number. Check format.
+                  </p>
+                </div>
+              </div>
+              <div class="info-section">
+                <h2>Shipping address</h2>
+                <div class="info-input">
+                  <label for="name"
+                    >Full name
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Your name.."
+                    />
+                    <i class="fa-solid fa-circle-user"></i>
+                  </label>
+                  <p class="hint hidden">Name cannot be empty.</p>
+                </div>
+                <div class="info-input">
+                  <label for="addr"
+                    >Address
+                    <input
+                      type="text"
+                      id="addr"
+                      name="addr"
+                      placeholder="Your address.."
+                    />
+                    <i class="fas fa-house"></i>
+                  </label>
+                  <p class="hint hidden">Address cannot be empty.</p>
+                </div>
+                <div class="info-input">
+                  <label for="city"
+                    >City
+                    <input
+                      type="text"
+                      id="city"
+                      name="city"
+                      placeholder="Your city.."
+                    />
+                    <i class="fas fa-city"></i>
+                  </label>
+                  <p class="hint hidden">City cannot be empty</p>
+                </div>
+                <div class="info-input">
+                  <label for="countries"
+                    >Country
+                    <select id="countries" name="countries" size="1">
+                      <option value="" disabled selected hidden>
+                        Your country..
+                      </option>
+                      <option value="United States">United States</option>
+                      <option value="Jamaica">Jamaica</option>
+                      <option value="Ghana">Ghana</option>
+                      <option value="Haiti">Haiti</option>
+                    </select>
+                    <i class="fas fa-city"></i>
+                  </label>
+                  <p class="hint hidden" id="usernameHint">
+                    No country selected.
+                  </p>
+                </div>
+                <div class="info-input">
+                  <label for="postal"
+                    >Postal Code
+                    <input
+                      type="text"
+                      id="zip"
+                      name="zip"
+                      maxlength="5"
+                      placeholder="Your postal code.."
+                    />
+                    <i class="fas fa-mail-bulk"></i>
+                  </label>
+                  <p class="hint hidden" id="usernameHint">
+                    Zipcode incorrect. Please check format.
+                  </p>
+                </div>
+                <div class="info-input">
+                  <label for="save">
+                    <input type="checkbox" id="save" name="save" />
+                    Save this information for next time
+                    <i></i>
+                  </label>
+                </div>
+                <button type="submit" id="checkout" name="continue">
+                  Continue
+                </button>
+              </div>
+            </div>
+          </form>
+          <div id="checkout-cart">
+            <div class="cart-item">
+              <img src="photo1.png" alt="" />
+              <div class="cart-item-details">
+                <p class="item-name">Vintage Backbag</p>
+                <p class="item-amount">$54.99 <span>$94.99</span></p>
+                <div class="item-counter">
+                  <span class="minus">—</span>
+                  <input
+                    type="text"
+                    value="1"
+                    class="quantity"
+                    name="quantity"
+                    aria-label="quantity"
+                  />
+                  <span class="plus">+</span>
+                </div>
+              </div>
+            </div>
+            <div class="cart-item">
+              <img src="photo2.png" alt="" />
+              <div class="cart-item-details">
+                <p class="item-name">Levi Shoes</p>
+                <p class="item-amount">$74.99 <span>$124.99</span></p>
+                <div class="item-counter">
+                  <span class="minus">—</span>
+                  <input
+                    type="text"
+                    value="1"
+                    class="quantity"
+                    name="quantity"
+                    aria-label="quantity"
+                  />
+                  <span class="plus">+</span>
+                </div>
+              </div>
+            </div>
+            <div id="cart-totals">
+              <div class="total">
+                <p>Shipping</p>
+                <p class="item-total">$19</p>
+              </div>
+              <div class="total">
+                <p>Total</p>
+                <p class="item-total" id="cart-total">$148.98</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="attribution">
+          coded by <a href="https://corvida.netlify.app/">Corvida</a> :
+          devChallenges.io
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
