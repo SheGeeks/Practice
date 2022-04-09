@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 1.5rem;
+  padding-left: 1.25rem;
+}
+.page-title {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  letter-spacing: -0.08em;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+img {
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+}
+
+.page-content {
+  font-family: "Space Mono", monospace;
+}
+
+.content-title {
+  font-size: 3rem;
+  font-weight: 700;
+  padding-right: 0;
+  line-height: 71px;
+  letter-spacing: -0.035em;
+  padding-bottom: 2rem;
+  color: #333333;
+}
+
+.content-text {
+  padding: 0 3rem 2rem 0;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: -0.035em;
+  margin-bottom: 3.5rem;
+  color: #4f4f4f;
+}
+
+#back-btn {
+  background-color: #333333;
+  padding: 1.5rem 2.688rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: -0.035em;
+}
+
+#back-btn:hover {
+  background-color: #312c4d;
+  color: #ff6d5b;
+}
+
+.credit {
+  position: relative;
+  top: 4rem;
+
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 17.07px;
+  color: #bdbdbd;
+}
+
+.credit a {
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  color: #bdbdbd;
+}
+
+span {
+  font-weight: 600;
+}
+
+/* Desktop Reflow */
+@media only screen and (min-width: 800px) {
+  body {
+    padding-left: 4.813rem;
+    padding-top: 2.5rem;
+  }
+  .container {
+    flex-flow: nowrap;
+    justify-content: start;
+    margin-bottom: 9rem;
+    height: 75vh;
+  }
+
+  img {
+    max-width: 40%;
+    padding-left: unset;
+  }
+
+  .page-content {
+    /* display: flex;
+    flex-direction: column;
+    align-items: stretch; */
+    max-width: 48%;
+    margin-left: 6rem;
+  }
+
+  .content-title {
+    font-family: Space Mono;
+    font-size: 4rem;
+    line-height: 95px;
+  }
+
+  .content-text {
+    max-width: 380px;
+    font-size: 1.5rem;
+    line-height: 36px;
+  }
+
+  .credit {
+    position: static;
+    margin: 0 0 1.5rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #eee;
+    background: #121212;
+  }
+
+  a {
+    color: #809fff;
+  }
+
+  .content-title,
+  .content-text {
+    color: #eee;
+  }
+}
