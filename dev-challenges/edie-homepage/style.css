@@ -110,7 +110,7 @@ nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 50%;
+  max-width: 200px;
   margin: 0;
   padding: 0;
 }
@@ -384,6 +384,7 @@ nav {
   gap: 0.5rem;
   display: flex;
   flex-wrap: wrap;
+  max-width: 500px;
 }
 
 #team p:first-child {
@@ -410,9 +411,11 @@ nav {
   grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
   margin-top: 1rem;
+  /* max-width: 702px; */
 }
 
 #team-imgs img {
+  /* max-width: 500px; */
   width: 100%;
   border-radius: 24px;
 }
@@ -541,6 +544,15 @@ svg {
 
 #attribution a:hover {
   color: #eb5757;
+}
+
+@media screen and (min-width: 525px) {
+  .full-width:not(.service.full-width):not(#hero-img.full-width) {
+    right: -18.5%;
+    left: unset;
+    margin: 0;
+    max-width: 136%;
+  }
 }
 
 @media screen and (min-width: 1000px) {
