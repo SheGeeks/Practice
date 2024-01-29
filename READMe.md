@@ -1,17 +1,14 @@
-# We Talking About Practice
+# Copywork
 
-A space for impromptu practice projects I've completed that capture my imagination and help improve my skills in web development.
+A space for practice projects that capture my imagination.
 
-## Clones
+## Single Page
 
-1. Canva Template: [Table of Contents](https://shegeeks.github.io/Practice/clones/table-of-contents/)
+[Interior Consultant Homepage](https://shegeeks.github.io/Practice/dev-challenges/interior-consultant/)
+[ Eccommerce Checkout Page](https://shegeeks.github.io/Practice/dev-challenges/checkout-page/)
+[Recipe Page](https://shegeeks.github.io/Practice/dev-challenges/recipe-page/)
+[Art Landing Page](https://shegeeks.github.io/Practice/ict-landing1/)
 
-## devChallenges.io
+## Misc
 
-### Responsive Web Challenges
-
-1. [Interior Consultant](https://shegeeks.github.io/Practice/dev-challenges/interior-consultant/)
-2. [My Gallery](https://shegeeks.github.io/Practice/dev-challenges/my-gallery/)
-3. [Team Page](https://shegeeks.github.io/Practice/dev-challenges/my-team-page/)
-4. [Recipe Page](https://shegeeks.github.io/Practice/dev-challenges/recipe-page/)
-5. [Checkout Page](https://shegeeks.github.io/Practice/dev-challenges/checkout-page/)
+Canva Template: [Table of Contents](https://shegeeks.github.io/Practice/clones/table-of-contents/)
