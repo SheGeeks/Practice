@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;700;800;900&display=swap');
+
+:root {
+    --primary-bold: hsl(211, 31%, 21%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gabarito', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.05fr 1.5fr;
+    grid-template-rows: 1fr;
+    gap: 0px 32px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Nav Main";
+    height: 100vh;
+}
+
+.main {
+    grid-area: Main;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+nav {
+    grid-area: Nav;
+    padding: 0;
+    writing-mode: vertical-lr;
+    background-color: var(--primary-bold);
+    min-height: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+nav li {
+    display: inline-block;
+    transform: rotate(0.5turn);
+    padding: 0 2rem;
+    cursor: pointer;
+    margin: 1.5rem 0;
+    border-right: 2px solid var(--primary-bold);
+}
+
+nav li:first-child {
+    border-right: 2px solid #fff;
+}
+
+
+nav li:hover {
+    cursor: pointer;
+    border-right: 2px solid #fff;
+    background-color: hwb(20 8% 18%);
+    transition: all ease .5s;
+
+}
+
+nav li a {
+    color: #ffffff96;
+    text-decoration: none;
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: .9rem;
+}
+
+nav li a:hover,
+nav li a:active {
+    color: #fff;
+    cursor: pointer;
+    transition: all ease .5s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem 2rem 0;
+}
+
+header img:first-child {
+    width: 40px;
+    height: 40px;
+}
+
+header img:nth-child(2) {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 65vh;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 3.5rem;
+    color: var(--primary-bold);
+    width: 50%;
+    line-height: 3.5rem;
+}
+
+button {
+    padding: .75rem 3rem;
+    background: transparent;
+    border: 1px solid var(--primary-bold);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 2rem 0;
+    cursor: pointer;
+    color: var(--primary-bold);
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: hwb(20 8% 18%);
+    color: #fff;
+    transition: all ease .25s;
+}
+
+.swiper {
+    width: 50%;
+    height: 100%;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding-top: 1rem !important;
+}
+
+@media screen and (min-width: 778px) and (max-width: 1024px) {
+
+    .swiper {
+        width: 49%;
+        height: 93%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .swiper {
+        width: 52%;
+    }
+
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    width: auto;
+    height: calc((100% - 20px) / 2) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    transition: all ease .3s;
+}
+
+.swiper-slide img:hover {
+    transform: scale(1.05);
+    transition: all ease .3s;
+}
+
+.swiper-pagination-bullet-active {
+    border-radius: 0 !important;
+    width: 10px !important;
+    height: 10px !important;
+    background: var(--primary-bold) !important;
+}
+
+.biz_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials {
+    width: 20%;
+    font-size: .8rem;
+    line-height: 1.4rem;
+    border: 1px solid #fff;
+    padding: .5rem;
+    color: #61778e;
+}
+
+@media screen and (min-width: 779px) {
+
+    h2 {
+        width: unset;
+    }
+
+    .cta div:first-child {
+        max-width: 275px;
+    }
+}
+
+.testimonial {
+    margin-bottom: .5rem;
+}
+
+
+.author {
+    font-weight: 500;
+    color: rgb(95, 95, 95);
+}
+
+.biz_hours {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: .9rem;
+}
+
+.biz_hours::after {
+    content: "";
+    width: 100%;
+    height: 85%;
+    z-index: -1;
+    position: relative;
+    bottom: 75px;
+    right: 0;
+    background-color: rgb(232, 232, 232);
+}
+
+.biz_hours h3 {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin: 0 1rem;
+}
+
+.biz_hours div {
+    margin: 0 1rem;
+}
+
+.biz_hours .day {
+    font-weight: 500;
+}
+
+footer {
+    margin-top: 1.25rem;
+    color: var(--primary-bold);
+}
+
+footer a {
+    color: var(--primary-bold);
+}
+
+footer a:hover {
+    color: hwb(20 8% 18%);
+}
+
+
+@media screen and (max-width: 778px) {
+
+    .container {
+        gap: 0px 8px;
+    }
+
+    .main {
+        gap: 1rem 0;
+        padding: 1rem;
+        overflow-x: hidden;
+    }
+
+    nav li {
+        padding: 0 1rem;
+    }
+
+    header {
+        padding: 1rem 0;
+    }
+
+    .cta {
+        flex-direction: column;
+        height: 70vh;
+        justify-content: flex-start;
+    }
+
+    .cta h2 {
+        width: unset;
+    }
+
+
+    button {
+        width: 100%;
+    }
+
+    .swiper {
+        margin: 0 0 0 auto !important;
+        width: 85%;
+        height: 100%
+    }
+
+    .biz_info {
+        flex-direction: column;
+        gap: 2rem;
+
+    }
+
+    .testimonials {
+        width: unset;
+        padding: 0;
+    }
+
+    .biz_hours {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .biz_hours * {
+        margin: 0 !important;
+    }
+
+    .biz_hours::after {
+
+        width: 100%;
+        height: 100%;
+        top: 12px;
+        right: 100%;
+    }
+
+}
