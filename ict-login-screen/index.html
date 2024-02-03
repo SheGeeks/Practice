@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <div class="login_img">
+                <img src="assets/lace-up.jpg" alt="black woman laces up shoes on running track">
+            </div>
+            <div class=" login_details">
+                <h1>Log <span>in</span></h1>
+                <form action="#" id="login_form" method="post" novalidate>
+                    <div class="form-field">
+                        <label for="email">Email<i aria-hidden="true" style="color:hsl(9, 72%, 48%);">*</i> <i
+                                class="vh">required</i></label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address"
+                            autocomplete="email" required aria-describedby="email-error">
+                        <p class="error" id="email-error">
+
+                        </p>
+                    </div>
+                    <div class="form-field">
+                        <label for="password">Password<i aria-hidden="true" style="color:hsl(9, 72%, 48%);">*</i> <i
+                                class="vh">required</i></label>
+                        <input type="password" id="password" name="password" minlength="4"
+                            placeholder="Enter your password" required aria-describedby="password-error">
+                        <p class="error" id="password-error">
+
+                        </p>
+                    </div>
+                    <div id="login_btns">
+                        <button id="login" type="submit">Log in</button>
+                        <p>or</p>
+                        <button id="login_alt" type="submit">Continue with a training club</button>
+                    </div>
+                </form>
+                <div class="small"><a href="#">Can't log in?</a> &centerdot; <a href="#">Sign up for an account</a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
