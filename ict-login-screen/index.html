@@ -11,15 +11,24 @@
 <body>
     <div class="container">
         <main>
+
             <div class="login_img">
-                <img src="assets/lace-up.jpg" alt="black woman laces up shoes on running track">
+                <img src="https://images.pexels.com/photos/5319373/pexels-photo-5319373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="" class="repeat-top">
+                <img src="https://images.pexels.com/photos/5319397/pexels-photo-5319397.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="" class="repeat-mid">
+                <img src="https://images.pexels.com/photos/5319325/pexels-photo-5319325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="" class="repeat-bottom">
             </div>
             <div class=" login_details">
-                <h1>Log <span>in</span></h1>
+
+                <div class="logo"><img src="assets/logo.png" alt="" id="logo"></img></div>
+
+
                 <form action="#" id="login_form" method="post" novalidate>
+                    <h1> Log<span>in</span></h1>
                     <div class="form-field">
-                        <label for="email">Email<i aria-hidden="true" style="color:hsl(9, 72%, 48%);">*</i> <i
-                                class="vh">required</i></label>
+                        <label for="email">Email:<i aria-hidden="true">*</i> <i class="vh">required</i></label>
                         <input type="email" id="email" name="email" placeholder="Enter your email address"
                             autocomplete="email" required aria-describedby="email-error">
                         <p class="error" id="email-error">
@@ -27,8 +36,7 @@
                         </p>
                     </div>
                     <div class="form-field">
-                        <label for="password">Password<i aria-hidden="true" style="color:hsl(9, 72%, 48%);">*</i> <i
-                                class="vh">required</i></label>
+                        <label for="password">Password:<i aria-hidden="true">*</i> <i class="vh">required</i></label>
                         <input type="password" id="password" name="password" minlength="4"
                             placeholder="Enter your password" required aria-describedby="password-error">
                         <p class="error" id="password-error">
@@ -37,7 +45,7 @@
                     </div>
                     <div id="login_btns">
                         <button id="login" type="submit">Log in</button>
-                        <p>or</p>
+                        <p><span>or</span></p>
                         <button id="login_alt" type="submit">Continue with a training club</button>
                     </div>
                 </form>
@@ -46,6 +54,7 @@
             </div>
         </main>
     </div>
+
     <script src="script.js"></script>
 </body>
 
