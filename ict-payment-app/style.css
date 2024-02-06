@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Nunito:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.section {
+    padding: 1rem;
+}
+
+main {
+    max-width: 425px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: #d73f29;
+    overflow: clip;
+}
+
+#account {
+    background-color: #1E1E1E;
+    color: silver;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#account img {
+    width: 100%;
+    max-width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center 20%;
+    transform: scaleX(-1);
+    border-radius: 100px;
+    margin-bottom: 1rem;
+}
+
+#balance {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#account p:first-of-type {
+    font-size: .75rem;
+    text-transform: capitalize;
+}
+
+.contacts_container {
+    position: relative;
+}
+
+#contacts_frequent .heading {
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: .85rem;
+}
+
+#contacts_frequent h2 {
+    font-size: .85rem;
+}
+
+#contacts_frequent a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+.contacts_frequent_container {
+    display: flex;
+    margin-top: 1rem;
+    text-align: center;
+    gap: 0 1rem;
+    justify-content: center;
+}
+
+.contacts_frequent_container .contact {
+    cursor: pointer;
+}
+
+.contacts_frequent_container img,
+#contacts_add .contact img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+    border-radius: 50px;
+    border: 1px solid hsl(0, 0%, 75%);
+}
+
+.contacts_frequent_container .contact_name {
+    font-size: .8rem;
+    line-height: .85rem;
+    color: #fff;
+    margin: .5rem 0;
+}
+
+#contacts_add {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    overflow: hidden;
+    margin: 0 1rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border: 0;
+    border-bottom: 0;
+}
+
+#contacts_add .contact {
+    display: flex;
+    flex-direction: column;
+    font-size: .85rem;
+    text-align: center;
+    border-bottom: 1px solid rgb(191, 191, 191);
+    padding: 1rem;
+    transition: all ease .3s;
+    cursor: pointer;
+}
+
+#contacts_add .contact:hover {
+    background-color: #413f40;
+    color: #fff;
+    transition: all ease .3s;
+}
+
+#contacts_add .contact:hover .contact_name,
+#contacts_add .contact:hover .contact_info {
+    transition: all ease .3s;
+    color: #fff;
+}
+
+#contacts_add .contact:first-of-type {
+    border-right: 1px solid rgb(191, 191, 191);
+}
+
+#contacts_add .contact:nth-last-child(2) {
+    border-right: 1px solid rgb(191, 191, 191);
+    border-bottom: 0;
+}
+
+#contacts_add .contact:last-child {
+    border-bottom: 0;
+}
+
+#contacts_add .contact_info {
+    color: #413f40;
+    font-size: .75rem;
+}
+
+#contacts_add button {
+    color: #fff;
+    background-color: #d73f29;
+    border: 0;
+    border-radius: 100px;
+    margin-top: .75rem;
+    padding: .5rem .25rem;
+    font-size: .75rem;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+#contacts_add .contact:hover button,
+#contacts_add button:hover {
+    background-color: #f3f3f3;
+    color: #d73f29;
+    transition: all ease .3s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: #f3f3f3;
+    border-top: 1px solid rgb(191, 191, 191);
+}
+
+.menu_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .8rem;
+    cursor: pointer;
+    gap: .25rem 0;
+}
+
+.menu_item svg {
+    width: 20px;
+    height: 20px;
+    fill: #ee543a;
+}
+
+#menu_item_send {
+    border: 0;
+    border-radius: 100px;
+    padding: .75rem;
+    transform: scale(1.2);
+    background-color: #d73f29;
+    color: #fff;
+}
+
+#menu_item_send svg {
+    fill: #fff;
+}
+
+.menu_item:hover svg {
+    fill: #413f40;
+}
+
+#menu_item_send:hover {
+    background-color: #413f40;
+}
+
+/* Popup */
+.container#blur.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    height: 270px;
+    padding: 2.5rem;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 10px;
+}
+
+#popup.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+#popup_close {
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: hsl(8, 69%, 65%);
+    background-color: transparent;
+    border: none;
+}
+
+#popup_close:hover {
+    color: #413f40;
+}
+
+#popup p {
+    display: none;
+    height: 155px;
+}
+
+#popup p.active {
+    display: block;
+}
+
+#pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .5rem;
+}
+
+.pagination_dots {
+    display: flex;
+}
+
+#pagination button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #d73f29;
+    border-radius: 100px;
+    padding: .1rem .75rem;
+    color: #d73f29;
+    transition: all ease .3s;
+}
+
+#pagination button:hover {
+    border-color: #413f40;
+    color: #413f40;
+    transition: all ease .3s;
+}
+
+#pagination a {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+}
+
+#pagination a::before {
+    position: absolute;
+    display: inline-block;
+    content: " ";
+    width: 2rem;
+    height: 2rem;
+}
+
+#pagination a.active {
+    font-size: 2rem;
+    transition: all ease .3s;
+}
+
+#pagination a:hover:not(.active) {
+    color: #d73f29;
+    transition: all ease .3s;
+}
+
+
+#pagination a.active svg {
+    color: #d73f29;
+    transition: all ease .3s;
+}
+
+/* end of popup */
+
+/* Send Money */
+.vh {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+#send_money {
+    background-color: #f3f3f3;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    position: relative;
+    max-width: 404px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: #1E1E1E;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+}
+
+#send_money.active {
+    visibility: visible;
+    padding: 2rem;
+    opacity: 1;
+    z-index: 2;
+    height: 100%;
+    transition: all .2s ease-in-out;
+}
+
+#close_btn {
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background-color: transparent;
+    border: 0;
+    color: hsl(8, 69%, 65%);
+}
+
+#close_btn:hover {
+    color: #413f40;
+}
+
+h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+.send_contact img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 1rem 0;
+    border: 7px solid hsl(8, 89%, 70%);
+    margin-top: 2rem;
+}
+
+.contact_name {
+    font-weight: 700;
+    color: #413f40;
+}
+
+.contact_info {
+    font-size: .8rem;
+}
+
+#transaction_form {
+    margin-top: 1rem;
+}
+
+#transaction_form label+span {
+    position: relative;
+}
+
+#transaction_form label+span::after {
+    content: "$";
+    position: absolute;
+    top: -2.25rem;
+    left: 0rem;
+    font-size: 3rem;
+    color: #413f40;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#transaction_form input {
+    color: #413f40;
+    width: 100%;
+    background-color: inherit;
+    border: 0;
+    border-bottom: 2px solid #413f40;
+    margin: 1rem 0 .25rem;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+#transaction_form input:user-invalid {
+    border: 0;
+    border-bottom: 2px solid #d73f29;
+}
+
+#transaction_form input+p {
+    font-family: 'DM Sans', sans-serif;
+    color: #7f7f7f;
+    font-size: .9rem;
+    margin: 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+#send_moneyBtn {
+    display: block;
+    margin: 5rem auto 1rem;
+    width: 80%;
+    padding: .75rem 0;
+    background-color: #d73f29;
+    color: #fff;
+    border: 0;
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+}
+
+#send_moneyBtn:disabled {
+    background-color: #7f7f7f;
+    color: #fff;
+}
+
+.error {
+    color: hsl(9, 80%, 44%);
+    font-size: .85rem;
+    font-weight: 700;
+}
+
+.error svg {
+    fill: hsl(9, 72%, 48%);
+}

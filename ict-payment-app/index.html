@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container active" id="blur">
+        <main>
+            <div id="account" class="section">
+                <img src="https://images.unsplash.com/photo-1632765854612-9b02b6ec2b15" alt="av">
+                <p>Available balance</p>
+                <p id="balance">$3000.00</p>
+            </div>
+            <div id="contacts" class="contacts_container">
+                <div id="contacts_frequent" class="section">
+                    <div class="heading">
+                        <h2>Frequent contacts</h2> <a href="" style="pointer-events: none;">view all</a>
+                    </div>
+                    <div class="contacts_frequent_container">
+                        <div class="contact">
+                            <img src="https://i.pravatar.cc/150?img=49" alt="">
+                            <p class="contact_name">Alicia Davis</p>
+                        </div>
+                        <div class="contact">
+                            <img src="https://i.pravatar.cc/150?img=16" alt="">
+                            <p class="contact_name">Monica Brown</p>
+                        </div>
+                        <div class="contact">
+                            <img src="https://i.pravatar.cc/150?img=46" alt="">
+                            <p class="contact_name">Jhene Harris</p>
+                        </div>
+                        <div class="contact">
+                            <img src="https://i.pravatar.cc/150?img=7" alt="">
+                            <p class="contact_name">Rashad Jackson</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="contacts_add">
+                    <div class="contact">
+                        <img src="https://i.pravatar.cc/150?img=16" alt="avi">
+                        <p class="contact_name">Michelle Mills</p>
+                        <p class="contact_info">@MichelleM</p>
+                        <button class="add_btn">Send money</button>
+                    </div>
+                    <div class="contact">
+                        <img src="https://images.pexels.com/photos/11677401/pexels-photo-11677401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="avi">
+                        <p class="contact_name">Marcus Johnson</p>
+                        <p class="contact_info">@YoungMarco</p>
+                        <button class="add_btn">Send money</button>
+                    </div>
+                    <div class="contact">
+                        <img src="https://i.pravatar.cc/150?img=7" alt="avi">
+                        <p class="contact_name">Darius Black</p>
+                        <p class="contact_info">@DMOney</p>
+                        <button class="add_btn">Send money</button>
+                    </div>
+                    <div class="contact">
+                        <img src="https://i.pravatar.cc/150?img=49" alt="avi">
+                        <p class="contact_name">Tamika Smith</p>
+                        <p class="contact_info">@Tamika</p>
+                        <button class="add_btn">Send money</button>
+                    </div>
+                </div>
+            </div>
+            <div id="send_money">
+                <h2>Send money</h2>
+                <button id="close_btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 16 16">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M4.28 3.22a.75.75 0 0 0-1.06 1.06L6.94 8l-3.72 3.72a.75.75 0 1 0 1.06 1.06L8 9.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L9.06 8l3.72-3.72a.75.75 0 0 0-1.06-1.06L8 6.94z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <div class="send_contact">
+                    <img src="https://i.pravatar.cc/150?img=16" alt="avi">
+                    <p class="contact_name">Michelle Mills</p>
+                </div>
+                <form action="#" id="transaction_form" method="post" novalidate>
+                    <label for="amount" class="vh">Amount:</label>
+                    <span></span><input type="number" name="amount" id="amount" pattern="[0-9]*" step="any" min="1"
+                        minlength="4" aria-describedby="amount_error" placeholder="0.00" required>
+                    <p>$1 minium required</p>
+                    <button id="send_moneyBtn" type="submit">Send</button>
+                    <p class="error" id="amount_error"></p>
+                </form>
+                <p class="send_amount"></p>
+            </div>
+            <nav class=" section">
+                <div class="menu_item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M20 20C20 20.5523 19.5523 21 19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20ZM11 13V19H13V13H11Z">
+                        </path>
+                    </svg>
+                    <p>Home</p>
+                </div>
+                <div class="menu_item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M22.0049 9.99979V19.9998C22.0049 20.5521 21.5572 20.9998 21.0049 20.9998H3.00488C2.4526 20.9998 2.00488 20.5521 2.00488 19.9998V9.99979H22.0049ZM22.0049 7.99979H2.00488V3.99979C2.00488 3.4475 2.4526 2.99979 3.00488 2.99979H21.0049C21.5572 2.99979 22.0049 3.4475 22.0049 3.99979V7.99979ZM15.0049 15.9998V17.9998H19.0049V15.9998H15.0049Z">
+                        </path>
+                    </svg>
+                    <p>Cards</p>
+                </div>
+                <button class="menu_item" id="menu_item_send">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M20 5C20 6.65685 18.6569 8 17 8C15.3431 8 14 6.65685 14 5C14 3.34315 15.3431 2 17 2C18.6569 2 20 3.34315 20 5ZM7 3C4.79086 3 3 4.79086 3 7V9H5V7C5 5.89543 5.89543 5 7 5H10V3H7ZM17 21C19.2091 21 21 19.2091 21 17V15H19V17C19 18.1046 18.1046 19 17 19H14V21H17ZM7 16C8.65685 16 10 14.6569 10 13C10 11.3431 8.65685 10 7 10C5.34315 10 4 11.3431 4 13C4 14.6569 5.34315 16 7 16ZM17 9C14.7909 9 13 10.7909 13 13H21C21 10.7909 19.2091 9 17 9ZM3 21C3 18.7909 4.79086 17 7 17C9.20914 17 11 18.7909 11 21H3Z">
+                        </path>
+                    </svg>Send </button>
+                <div class="menu_item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M9 4L6 2L3 4V16V19C3 20.6569 4.34315 22 6 22H20C21.6569 22 23 20.6569 23 19V17H7V19C7 19.5523 6.55228 20 6 20C5.44772 20 5 19.5523 5 19V15H21V4L18 2L15 4L12 2L9 4Z">
+                        </path>
+                    </svg>
+                    <p>Tax</p>
+                </div>
+                <div class="menu_item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13Z">
+                        </path>
+                    </svg>
+                    <p>Profile</p>
+                </div>
+            </nav>
+        </main>
+    </div>
+
+    <div id="popup" class="section active">
+        <button id="popup_close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 16 16">
+                <path fill="currentColor" fill-rule="evenodd"
+                    d="M4.28 3.22a.75.75 0 0 0-1.06 1.06L6.94 8l-3.72 3.72a.75.75 0 1 0 1.06 1.06L8 9.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L9.06 8l3.72-3.72a.75.75 0 0 0-1.06-1.06L8 6.94z"
+                    clip-rule="evenodd" />
+            </svg>
+        </button>
+        <p class="active">
+            Accept payments on your phone with simple payment buttons, or one of our flexible payment
+            solutions,
+            which can be customized to the needs of your business.
+        </p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi facilis accusamus neque inventore
+            repellat harum architecto cum necessitatibus, aspernatur aliquid suscipit error? Sint possimus
+            natus deleniti quae ipsa nihil fuga.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi facilis accusamus neque inventore
+            repellat harum architecto cum necessitatibus, aspernatur aliquid suscipit error?</p>
+        <div id="pagination">
+            <button id="btn_prev"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                    viewBox="0 0 16 16">
+                    <path fill="currentColor" fill-rule="evenodd"
+                        d="M5.841 5.28a.75.75 0 0 0-1.06-1.06L1.53 7.47L1 8l.53.53l3.25 3.25a.75.75 0 0 0 1.061-1.06l-1.97-1.97H14.25a.75.75 0 0 0 0-1.5H3.871z"
+                        clip-rule="evenodd" />
+                </svg></button>
+            <div class="pagination_dots">
+                <a href="#" class="active page"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                        viewBox="0 0 256 256">
+                        <g fill="currentColor">
+                            <path d="M176 128a48 48 0 1 1-48-48a48 48 0 0 1 48 48" opacity=".2" />
+                            <path d="M140 128a12 12 0 1 1-12-12a12 12 0 0 1 12 12" />
+                        </g>
+                    </svg></a>
+                <a href="#" class=" page"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                        viewBox="0 0 256 256">
+                        <g fill="currentColor">
+                            <path d="M176 128a48 48 0 1 1-48-48a48 48 0 0 1 48 48" opacity=".2" />
+                            <path d="M140 128a12 12 0 1 1-12-12a12 12 0 0 1 12 12" />
+                        </g>
+                    </svg></a>
+                <a href="#" class=" page"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                        viewBox="0 0 256 256">
+                        <g fill="currentColor">
+                            <path d="M176 128a48 48 0 1 1-48-48a48 48 0 0 1 48 48" opacity=".2" />
+                            <path d="M140 128a12 12 0 1 1-12-12a12 12 0 0 1 12 12" />
+                        </g>
+                    </svg></a>
+            </div>
+            <button id="btn_next"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                    viewBox="0 0 16 16">
+                    <path fill="currentColor" fill-rule="evenodd"
+                        d="M10.159 10.72a.75.75 0 1 0 1.06 1.06l3.25-3.25L15 8l-.53-.53l-3.25-3.25a.75.75 0 0 0-1.061 1.06l1.97 1.97H1.75a.75.75 0 1 0 0 1.5h10.379z"
+                        clip-rule="evenodd" />
+                </svg></button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
