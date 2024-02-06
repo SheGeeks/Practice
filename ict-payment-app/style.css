@@ -406,13 +406,13 @@ h2 {
 }
 
 .send_contact img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
     border-radius: 50%;
     margin: 1rem 0;
     border: 7px solid hsl(8, 89%, 70%);
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 }
 
 .contact_name {
@@ -484,7 +484,7 @@ input[type=number] {
 
 #send_moneyBtn {
     display: block;
-    margin: 5rem auto 1rem;
+    margin: 3rem auto 0;
     width: 80%;
     padding: .75rem 0;
     background-color: #d73f29;
