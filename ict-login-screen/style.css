@@ -54,7 +54,6 @@ button:hover {
     align-items: center;
     background-color: hsl(43.2, 22.9%, 78.6%);
     min-width: 244px;
-    /* height: 100vh; */
 }
 
 main {
@@ -63,7 +62,6 @@ main {
     justify-content: center;
     align-items: stretch;
     background-color: #fff;
-    /* position: relative; */
 }
 
 .login_img {
@@ -78,7 +76,6 @@ main {
     object-position: center;
     display: block;
 }
-
 
 img.repeat-top,
 img.repeat-bottom {
@@ -122,7 +119,6 @@ h1 span {
         1px 1px 2px var(--headings),
         1px -1px 0 var(--headings),
         -1px -1px 0 var(--headings);
-    /* border: 1px solid #d2d2c9; */
     border: 1px solid #d74608a4;
     font-style: italic;
     color: var(--cream-accent);
@@ -257,9 +253,6 @@ button {
 }
 
 #login_alt:hover {
-    /* background-color: hsl(206, 15%, 27%);
-    color: #fff;
-    border-color: #000; */
     background-color: #d2d2c9;
     color: var(--red-accent);
     border: 1px solid var(--border-grey);
@@ -300,7 +293,6 @@ button {
         border: 0;
         position: initial;
         transform: none;
-
     }
 
     h1 {
@@ -321,7 +313,6 @@ button {
         grid-template-columns: 1fr;
         grid-template-rows: 0.2fr 0.9fr 0.2fr;
         gap: 1.5rem;
-        /* max-height: 600px; */
         flex: 1 1 40%;
         grid-template-areas:
             "repeat-top"
@@ -341,16 +332,18 @@ button {
     img.repeat-top {
         grid-area: repeat-top;
         display: block;
+        object-position: center 20%;
     }
 
     img.repeat-mid {
         grid-area: repeat-mid;
+        object-position: right;
     }
 
     img.repeat-bottom {
         grid-area: repeat-bottom;
         display: block;
-        object-position: center 25%;
+        object-position: center 72%;
     }
 
     .login_details {
